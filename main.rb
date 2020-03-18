@@ -6,12 +6,15 @@
 require_relative 'bmx_bike'
 require_relative 'road_bike'
 require_relative 'mountain_bike'
+require_relative 'roll_pack'
+require_relative 'pannier'
+require_relative 'tail_pack'
 
 bikes = [
-  BmxBike.new,
-  RoadBike.new,
-  MountainBike.new,
-  MountainBike.new
+  BmxBike.new(70, 20, 5, TailPack.new),
+  RoadBike.new(15, [Pannier.new, Pannier.new]),
+  MountainBike.new(90, 25, 10, RollPack.new),
+  MountainBike.new(90, 25, 10, RollPack.new)
 ]
 
 # I have no idea why this reduce doesn't work

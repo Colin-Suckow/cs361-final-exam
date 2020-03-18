@@ -5,11 +5,11 @@ class MountainBike
 
   include Price
 
-  def initialize
-    @luggage = RollPack.new
-    @weekly_rate = 90
-    @daily_rate = 25
-    @hourly_rate = 10
+  def initialize(weekly_rate, daily_rate, hourly_rate, luggage)
+    @luggage = luggage
+    @weekly_rate = weekly_rate
+    @daily_rate = daily_rate
+    @hourly_rate = hourly_rate
   end
 
   def clean

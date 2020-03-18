@@ -5,9 +5,9 @@ class RoadBike
 
   include Price
 
-  def initialize
-    @panniers = [Pannier.new, Pannier.new]
-    @daily_rate = 15
+  def initialize(daily_rate, panniers)
+    @panniers = panniers
+    @daily_rate = daily_rate
   end
 
   def clean
