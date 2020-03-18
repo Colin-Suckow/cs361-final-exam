@@ -14,6 +14,7 @@ bikes = [
   MountainBike.new
 ]
 
+# I have no idea why this reduce doesn't work
 #total_price = bikes.reduce {|total, bike| bike.total_price + total}
 
 total_price = 0
