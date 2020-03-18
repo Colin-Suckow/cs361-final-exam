@@ -1,6 +1,9 @@
 require_relative 'roll_pack'
+require_relative 'price'
 
 class MountainBike
+
+  include Price
 
   def initialize
     @luggage = RollPack.new
@@ -31,6 +34,10 @@ class MountainBike
 
   def hourly_rate
     @hourly_rate
+  end
+
+  def total_price
+    @weekly_rate + @luggage.price
   end
 
 end
