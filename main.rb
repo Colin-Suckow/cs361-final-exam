@@ -10,7 +10,7 @@ require_relative 'roll_pack'
 
 bikes = [
   BmxBike.new,
-  RoadBike.new,
+  RoadBike.new(15, [Pannier.new, Pannier.new]),
   MountainBike.new(90, 25, 10, RollPack.new),
   MountainBike.new(90, 25, 10, RollPack.new)
 ]
